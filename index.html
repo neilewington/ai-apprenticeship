@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
 <title>AI and Automation Practitioner, Level 4 | Government funded apprenticeship</title>
 <meta name="description" content="A UK government approved Level 4 qualification in AI and automation, up to 100% funded. Trains someone on your team to find where your business is losing hours, then build the fix.">
 <meta name="robots" content="index, follow">
@@ -19,6 +20,7 @@
 html{-webkit-text-size-adjust:100%}
 
 :root{
+  color-scheme:light; /* single-theme brand page: identical for every visitor */
   /* otma.ac.uk website palette */
   --blue:#359CD3;          /* site button / accent */
   --blue-dark:#2B7FB0;
@@ -45,42 +47,6 @@ html{-webkit-text-size-adjust:100%}
   --hero-rule:rgba(255,255,255,.30);
   --field-bg:rgba(255,255,255,.10);
   --field-rule:rgba(255,255,255,.34);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#101820;
-    --tint:#16212B;
-    --tint-deep:#1B2A38;
-    --surface:#16212B;
-    --ink:#E7ECEF;
-    --grey:#A6B1BC;
-    --faint:#7B8792;
-    --line:#26333F;
-    --line-strong:#3A4A58;
-    --indigo:#8AAEE8;
-    --indigo-deep:#8AAEE8;
-    --blue:#4FB3E6;
-    --blue-dark:#69C1EC;
-    --sand:#2A2620;
-    --sand-line:#3B342A;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#101820;
-  --tint:#16212B;
-  --tint-deep:#1B2A38;
-  --surface:#16212B;
-  --ink:#E7ECEF;
-  --grey:#A6B1BC;
-  --faint:#7B8792;
-  --line:#26333F;
-  --line-strong:#3A4A58;
-  --indigo:#8AAEE8;
-  --indigo-deep:#8AAEE8;
-  --blue:#4FB3E6;
-  --blue-dark:#69C1EC;
-  --sand:#2A2620;
-  --sand-line:#3B342A;
 }
 
 *{box-sizing:border-box}
@@ -269,8 +235,6 @@ section{padding:72px 0;border-bottom:1px solid var(--line);background:var(--tint
   font-family:"Fira Sans Condensed",Arial,sans-serif;font-size:12.5px;font-weight:600;
   letter-spacing:.13em;text-transform:uppercase;
 }
-:root[data-theme="dark"] .mhead{background:#1E3570;color:#fff}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .mhead{background:#1E3570;color:#fff}}
 .mhead .r{text-align:right}
 
 .phead{
@@ -310,8 +274,6 @@ section{padding:72px 0;border-bottom:1px solid var(--line);background:var(--tint
   font-family:"Fira Sans Condensed",Arial,sans-serif;font-size:11.5px;font-weight:600;
   letter-spacing:.09em;text-transform:uppercase;padding:2px 8px;border-radius:5px;
 }
-:root[data-theme="dark"] .cflag{color:#E4C98A}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cflag{color:#E4C98A}}
 .mtotal{
   display:grid;grid-template-columns:1fr 82px 86px;gap:18px;padding:15px 24px;
   border-top:2px solid var(--indigo);background:var(--tint-deep);
@@ -346,8 +308,6 @@ section{padding:72px 0;border-bottom:1px solid var(--line);background:var(--tint
 .contact b{color:#fff;font-weight:600}
 
 footer{background:var(--indigo-deep);color:#C6D4EC;padding:34px 0 40px}
-:root[data-theme="dark"] footer{background:#0B121C}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#0B121C}}
 .foot-r{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
 .foot-r img{height:32px;width:auto;display:block}
 .foot-t{font-size:13.5px;line-height:1.7;text-align:right}
