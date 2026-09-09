@@ -31,7 +31,8 @@ html{-webkit-text-size-adjust:100%}
   --sand-line:#E4DAC6;
 
   --paper:#FFFFFF;
-  --tint:#F4F9FC;
+  --tint:#EAF2FA;
+  --tint-deep:#DCE9F6;
   --surface:#FFFFFF;
   --ink:#2D2E2E;
   --grey:#5C6470;
@@ -49,6 +50,7 @@ html{-webkit-text-size-adjust:100%}
   :root:not([data-theme="light"]){
     --paper:#101820;
     --tint:#16212B;
+    --tint-deep:#1B2A38;
     --surface:#16212B;
     --ink:#E7ECEF;
     --grey:#A6B1BC;
@@ -66,6 +68,7 @@ html{-webkit-text-size-adjust:100%}
 :root[data-theme="dark"]{
   --paper:#101820;
   --tint:#16212B;
+  --tint-deep:#1B2A38;
   --surface:#16212B;
   --ink:#E7ECEF;
   --grey:#A6B1BC;
@@ -130,12 +133,14 @@ a{color:inherit}
 }
 .creds .badge{
   background:var(--sand-fixed);color:#2B4793;border-radius:6px;
-  padding:5px 12px;letter-spacing:.10em;
+  padding:5px 12px;letter-spacing:.10em;line-height:1.15;
 }
-.creds span:not(.badge){position:relative;padding-left:22px}
+.creds span:not(.badge){display:inline-flex;align-items:center;gap:9px;line-height:1}
 .creds span:not(.badge):before{
-  content:"";position:absolute;left:0;top:50%;width:10px;height:10px;margin-top:-5px;
-  border-radius:50%;border:2px solid rgba(255,255,255,.55);
+  content:"";flex:0 0 auto;width:10px;height:10px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.55);
+  /* uppercase caps sit above the em-box centre, so nudge the ring up to match */
+  position:relative;top:-1px;
 }
 @media (max-width:900px){.creds{gap:10px 16px;font-size:12px}}
 .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:54px;align-items:start;padding:44px 0 64px}
@@ -196,8 +201,7 @@ section .btn-primary:hover{background:var(--blue-dark)}
 .calc-foot{font-size:12.5px;color:var(--hero-muted);margin:15px 0 0;line-height:1.5}
 
 /* ---------- SECTIONS ---------- */
-section{padding:72px 0;border-bottom:1px solid var(--line)}
-section:nth-of-type(even){background:var(--tint)}
+section{padding:72px 0;border-bottom:1px solid var(--line);background:var(--tint)}
 .sec-head{max-width:740px;margin-bottom:40px}
 .sec-head h2{margin-top:12px}
 .sec-head p{color:var(--grey);font-size:18px;margin:16px 0 0;text-transform:none}
@@ -271,7 +275,7 @@ section:nth-of-type(even){background:var(--tint)}
 
 .phead{
   display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
-  padding:11px 24px;background:var(--tint);border-top:1px solid var(--line);
+  padding:11px 24px;background:var(--tint-deep);border-top:1px solid var(--line);
   border-left:4px solid var(--blue);
   font-family:"Fira Sans Condensed",Arial,sans-serif;text-transform:uppercase;
 }
@@ -310,7 +314,7 @@ section:nth-of-type(even){background:var(--tint)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cflag{color:#E4C98A}}
 .mtotal{
   display:grid;grid-template-columns:1fr 82px 86px;gap:18px;padding:15px 24px;
-  border-top:2px solid var(--indigo);background:var(--tint);
+  border-top:2px solid var(--indigo);background:var(--tint-deep);
   font-family:"Fira Sans Condensed",Arial,sans-serif;font-size:16px;font-weight:600;
   text-transform:uppercase;letter-spacing:.04em;color:var(--indigo);
   font-variant-numeric:tabular-nums;
@@ -480,12 +484,19 @@ footer{background:var(--indigo-deep);color:#C6D4EC;padding:34px 0 40px}
 
     <div class="tl">
       <div class="tlrow"><span class="m">Month 1</span><span class="d">They audit their own working time and map where your business leaks hours.</span></div>
+      <div class="tlrow"><span class="m">Month 2</span><span class="d">Your current use of AI is checked against UK GDPR and automated decision-making rules, and anything risky is flagged early.</span></div>
       <div class="tlrow mark"><span class="m">Month 3</span><span class="d"><b>First working build.</b> A small AI assistant handling one repetitive task. Early proof, not a promise.</span></div>
+      <div class="tlrow"><span class="m">Month 4</span><span class="d">Your data is profiled honestly: what is complete, what is wrong, and whether it can actually support what you want to build.</span></div>
       <div class="tlrow mark"><span class="m">Month 5</span><span class="d"><b>Second build.</b> One step of a mapped process automated end to end.</span></div>
+      <div class="tlrow"><span class="m">Month 6</span><span class="d">Prompts written and scored against a rubric, so output quality is measured rather than assumed.</span></div>
       <div class="tlrow mark"><span class="m">Month 7</span><span class="d"><b>The main build.</b> The real automation, on the process you care about, working.</span></div>
+      <div class="tlrow"><span class="m">Month 8</span><span class="d">It connects to your other systems, so it stops being an island and starts fitting the way you actually work.</span></div>
       <div class="tlrow"><span class="m">Month 9</span><span class="d">Tested properly, documented, with a go live recommendation you can act on.</span></div>
       <div class="tlrow"><span class="m">Month 10</span><span class="d">Live, and your team trained and actually using it.</span></div>
+      <div class="tlrow"><span class="m">Month 11</span><span class="d">Monitoring, security and ownership agreed, so it keeps working when nobody is watching it.</span></div>
       <div class="tlrow mark"><span class="m">Month 12</span><span class="d"><b>The costed report.</b> What it saved, in hours and pounds, measured against a baseline taken before you started.</span></div>
+      <div class="tlrow"><span class="m">Month 13</span><span class="d">An impact assessment on who the change affected, and the whole portfolio of evidence pulled together.</span></div>
+      <div class="tlrow"><span class="m">Month 14</span><span class="d">No new teaching. Portfolio finalised and the end point assessment rehearsed.</span></div>
       <div class="tlrow"><span class="m">Month 15</span><span class="d">Practical period ends. End point assessment follows separately.</span></div>
     </div>
   </div>
