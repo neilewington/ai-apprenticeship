@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Referral Partners | AI Ready</title>
+<meta name="description" content="Earn up to &pound;500 for every learner you introduce to the Level 4 AI and Automation Practitioner programme. You make the introduction, AI Ready handles the rest.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Referral Partners | AI Ready">
+<meta property="og:description" content="Earn up to &pound;500 for every learner you introduce to the Level 4 AI and Automation Practitioner programme.">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#09172F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --sky:#C5E4F6;
+  --sky-deep:#A9D2EC;
+  --navy:#09172F;
+  --navy-soft:#132644;
+  --teal:#5B9E9F;
+  --teal-deep:#457F80;
+  --sage:#CCDCA8;
+  --sage-deep:#AFC383;
+  --ink:#0E1B2C;
+  --grey:#4C5A6B;
+  --faint:#7C8CA0;
+  --line:rgba(9,23,47,.12);
+  --line-strong:rgba(9,23,47,.22);
+  --surface:#FFFFFF;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--sky);color:var(--ink);
+  font-family:Manrope,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:Manrope,Arial,sans-serif;font-weight:300;letter-spacing:.2px;margin:0;text-wrap:balance;color:var(--navy)}
+p{margin:0 0 16px}
+a{color:inherit}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-deep)}
+
+/* top link back */
+.topnav{background:var(--navy);color:#fff}
+.topnav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:11px 26px}
+.topnav a{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#B9C9DE}
+.topnav a:hover{color:#fff}
+
+/* hero */
+.hero{padding:52px 0 44px;position:relative;overflow:hidden}
+.hero:before{
+  content:"";position:absolute;right:-10%;top:-25%;width:60%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle, rgba(91,158,159,.16) 0%, transparent 68%);
+  pointer-events:none;
+}
+.hero > *{position:relative}
+.brand{display:flex;align-items:center;gap:9px;margin-bottom:26px}
+.brand .mark{width:15px;height:15px;background:var(--navy);
+  clip-path:polygon(50% 0%, 0% 100%, 100% 100%)}
+.brand b{font-weight:800;letter-spacing:.04em;font-size:16px;color:var(--navy)}
+.hero h1{font-size:clamp(30px,4.6vw,44px);line-height:1.14;font-weight:300;margin:14px 0 0;max-width:15em}
+.hero h1 b{font-weight:700}
+.hero .lede{font-size:18.5px;color:var(--grey);margin:20px 0 0;max-width:38em;line-height:1.58}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;font-weight:700;font-size:15.5px;padding:13px 26px;border-radius:9px;
+  text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background .15s ease}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-soft);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line-strong);color:var(--navy)}
+.btn-ghost:hover{border-color:var(--navy)}
+
+/* earn banner */
+.earnbar{
+  background:var(--navy);color:#fff;border-radius:16px;padding:30px 32px;margin-top:8px;
+  display:flex;align-items:center;gap:26px;flex-wrap:wrap;
+}
+.earnbar .big{font-family:Manrope,Arial,sans-serif;font-weight:800;font-size:clamp(38px,5vw,54px);
+  line-height:1;color:var(--sky)}
+.earnbar .txt{font-size:15.5px;color:#C6D6E8;max-width:30em;line-height:1.55}
+.earnbar .txt b{color:#fff;font-weight:700}
+
+section{padding:46px 0;border-top:1px solid var(--line)}
+.sec-head{max-width:640px;margin-bottom:26px}
+.sec-head h2{font-size:clamp(22px,2.8vw,28px);margin-top:8px}
+.sec-head p{color:var(--grey);font-size:16.5px;margin:12px 0 0}
+
+/* key facts */
+.facts{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;overflow:hidden}
+.frow{display:grid;grid-template-columns:220px 1fr;gap:18px;padding:13px 22px;border-top:1px solid var(--line)}
+.facts .frow:first-child{border-top:none}
+.frow dt{font-size:12.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin:0;padding-top:2px}
+.frow dd{margin:0}
+.frow dd b{color:var(--teal-deep);font-weight:700}
+
+/* payout breakdown */
+.pay{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:center;margin:22px 0 0}
+.pcard{background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;padding:20px 18px;text-align:center}
+.pcard .amt{font-weight:800;font-size:32px;color:var(--navy);letter-spacing:-.5px}
+.pcard .lab{font-size:13.5px;color:var(--grey);margin-top:5px;line-height:1.4}
+.pop{font-size:22px;color:var(--teal-deep);font-weight:700;text-align:center}
+.pcard.total{background:var(--navy)}
+.pcard.total .amt{color:var(--sky)}
+.pcard.total .lab{color:#B9C9DE}
+.note{font-size:14.5px;color:var(--grey);margin-top:16px}
+
+/* earnings table */
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;overflow:hidden}
+thead th{background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  text-align:right;padding:13px 22px}
+thead th:first-child{text-align:left}
+tbody td{text-align:right;padding:13px 22px;border-top:1px solid var(--line);font-weight:600;color:var(--ink)}
+tbody td:first-child{text-align:left;color:var(--grey);font-weight:400}
+tbody td.hero-row{color:var(--teal-deep);font-weight:800;font-size:18px}
+tbody tr:last-child td{background:rgba(91,158,159,.08)}
+
+/* who to introduce */
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.wcard{background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;padding:16px 18px;border-top:4px solid var(--sage)}
+.wcard:nth-child(3n+2){border-top-color:var(--teal)}
+.wcard:nth-child(3n){border-top-color:var(--navy)}
+.wcard b{display:block;color:var(--navy);font-weight:700;font-size:15.5px;margin-bottom:5px}
+.wcard span{font-size:14px;color:var(--grey);line-height:1.4}
+
+/* what you do */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.steps li{display:flex;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.steps li:first-child{border-top:none}
+.steps .sn{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--teal);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.steps .st{padding-top:3px}
+.steps b{color:var(--navy)}
+
+/* close */
+.close{background:var(--navy);color:#fff;border-top:none;margin-top:6px;border-radius:20px 20px 0 0}
+.close .wrap{padding:46px 26px 50px}
+.close .eyebrow{color:var(--teal)}
+.close h2{color:#fff;margin-top:10px}
+.close p{color:#C6D6E8;font-size:17px;max-width:44em}
+.close .btn-primary{background:var(--sky);color:var(--navy)}
+.close .btn-primary:hover{background:#fff}
+.signoff{margin-top:26px;font-size:14.5px;color:#9FB2C8;border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
+.signoff b{color:#fff;font-weight:700}
+
+footer{background:var(--navy-soft);color:#9FB2C8;padding:20px 0;font-size:13.5px;border-radius:0}
+
+@media (max-width:720px){
+  .pay{grid-template-columns:1fr;gap:10px}
+  .pop{display:none}
+  .frow{grid-template-columns:1fr;gap:3px;padding:12px 18px}
+  table{display:block;overflow-x:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav"><div class="wrap">
+  <a href="../">&larr; Back to the apprenticeship page</a>
+  <a href="mailto:ready@aiready.solutions">ready@aiready.solutions</a>
+</div></div>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="mark"></span><b>AI READY</b></div>
+    <span class="eyebrow">Referral Partner Opportunity</span>
+    <h1>Earn <b>up to &pound;500</b> for every learner you introduce.</h1>
+    <p class="lede">AI Ready is opening a referral opportunity for people who can introduce businesses or individuals to the Level&nbsp;4 Artificial Intelligence &amp; Automation Practitioner programme. You make the introduction. We handle the rest.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:ready@aiready.solutions?subject=Referral%20Partner%20Opportunity">Get in touch</a>
+      <a class="btn btn-ghost" href="../">See the programme</a>
+    </div>
+
+    <div class="earnbar" style="margin-top:36px">
+      <div class="big">&pound;500</div>
+      <div class="txt">total per learner who enrols through your introduction and starts the programme. Paid in two parts, both triggered by the learner actually starting and staying on.</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The programme</span>
+      <h2>What you are introducing people to.</h2>
+    </div>
+    <p>Over 15 months, including testing time, learners go beyond understanding what AI is. They learn to identify a process or challenge in their business, choose the right AI, integrate the solution, and demonstrate its business benefits. They can repeat this approach for other business challenges as often as needed.</p>
+
+    <dl class="facts">
+      <div class="frow"><dt>Programme value</dt><dd><b>&pound;18,000</b>, funded through the UK apprenticeship system</dd></div>
+      <div class="frow"><dt>Funding, ages 16&ndash;24</dt><dd><b>100% funded</b> for eligible learners in England</dd></div>
+      <div class="frow"><dt>Funding, ages 25+</dt><dd><b>95% funded</b> for non-levy employers, up to the funding cap</dd></div>
+      <div class="frow"><dt>Learner requirements</dt><dd>Currently employed by a UK employer, on a contract covering the full 15 months including testing time, working <b>over 16 hours a week</b></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What you earn</span>
+      <h2>Two payments, both tied to the learner actually starting.</h2>
+      <p>For every learner who enrols through your introduction and starts the programme.</p>
+    </div>
+
+    <div class="pay">
+      <div class="pcard"><div class="amt">&pound;360</div><div class="lab">upfront: 50% of the &pound;720 AI Ready receives when the learner starts</div></div>
+      <div class="pop">+</div>
+      <div class="pcard"><div class="amt">&pound;140</div><div class="lab">at month three, if the learner remains active on the programme</div></div>
+      <div class="pop">=</div>
+      <div class="pcard total"><div class="amt">&pound;500</div><div class="lab">total per learner</div></div>
+    </div>
+    <p class="note">The first payment is made once the learner starts and AI Ready receives the &pound;720 upfront fee. The second is payable if the learner is still active at month three. A single company may have several suitable employees, so one introduction could lead to multiple learners.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What it adds up to</span>
+      <h2>Potential earnings, by successful learner.</h2>
+    </div>
+    <table>
+      <thead><tr><th>Successful learners</th><th>Potential earnings</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>&pound;500</td></tr>
+        <tr><td>30</td><td>&pound;15,000</td></tr>
+        <tr><td>40</td><td>&pound;20,000</td></tr>
+        <tr><td>100</td><td>&pound;50,000</td></tr>
+        <tr><td>200</td><td class="hero-row">&pound;100,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What you need to do</span>
+      <h2>Just make the introduction.</h2>
+      <p>We handle the programme explanation, eligibility, funding conversations, enrolment and delivery.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="sn">1</span><span class="st">You know someone (a business owner, an HR lead, a colleague) who might benefit from this.</span></li>
+      <li><span class="sn">2</span><span class="st">You <b>make the introduction</b>. That is genuinely the whole of your role.</span></li>
+      <li><span class="sn">3</span><span class="st">AI Ready explains the programme, checks eligibility, and talks through the funding.</span></li>
+      <li><span class="sn">4</span><span class="st">If a learner enrols and starts, <b>you get paid</b>: &pound;360 at the start, &pound;140 at month three.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Who to introduce</span>
+      <h2>The strongest introductions.</h2>
+    </div>
+    <div class="who">
+      <div class="wcard"><b>Business owners &amp; founders</b><span>Especially at SMEs looking to build real AI capability</span></div>
+      <div class="wcard"><b>HR leaders</b><span>Owning apprenticeship levy spend and workforce development</span></div>
+      <div class="wcard"><b>L&amp;D teams</b><span>Building structured, practical training programmes</span></div>
+      <div class="wcard"><b>Transformation leaders</b><span>Driving process and efficiency change</span></div>
+      <div class="wcard"><b>Department heads</b><span>With teams doing repetitive, process-heavy work</span></div>
+      <div class="wcard"><b>Anyone building AI capability</b><span>Organisations who know they need this and do not yet have it</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="close">
+  <div class="wrap">
+    <span class="eyebrow">Interested?</span>
+    <h2>If you know businesses or people who could benefit, get in touch.</h2>
+    <p>Structured, practical AI training, up to 100% funded, and a genuine business benefit at the end of it. Tell us who you have in mind.</p>
+    <div class="hero-cta" style="margin-top:24px">
+      <a class="btn btn-primary" href="mailto:ready@aiready.solutions?subject=Referral%20Partner%20Opportunity">Email ready@aiready.solutions</a>
+    </div>
+    <div class="signoff"><b>Neil Ewington</b> &nbsp;&middot;&nbsp; Founder, AI Ready</div>
+  </div>
+</div>
+
+<footer><div class="wrap">AI Ready &nbsp;&middot;&nbsp; Referral Partner Programme &nbsp;&middot;&nbsp; ready@aiready.solutions</div></footer>
+
+</body>
+</html>
