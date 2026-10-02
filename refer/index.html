@@ -366,6 +366,9 @@ footer nav a:hover{text-decoration:underline}
 .bookcard .ticks li{font-size:16.5px}
 .staff-ticks{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin-top:22px}
 @media (max-width:720px){.staff-ticks{grid-template-columns:1fr}.choice{padding:16px 18px}.choice .ct b{font-size:19px}}
+.fund.f2{grid-template-columns:repeat(2,1fr)}
+.levynote{margin:16px 0 0;font-size:17px;color:var(--navy)}
+@media (max-width:720px){.fund.f2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -422,11 +425,11 @@ footer nav a:hover{text-decoration:underline}
       <h2>Train your own team in AI, funded by the government.</h2>
       <p>Put existing staff, or new hires, through a recognised Level 4 qualification. They learn to use AI and automation on real problems in your business, using around 7 hours a week of their paid working time, fully online.</p>
     </div>
-    <div class="fund">
+    <div class="fund f2">
       <div class="fcard lead"><span class="who">Staff aged 16 to 24</span><span class="big">100%</span><span class="sub">Fully funded</span><p>Nothing for you to pay, whatever the size of your business.</p></div>
-      <div class="fcard"><span class="who">Aged 25+, non-levy employer</span><span class="big">&pound;900</span><span class="sub">Your maximum cost</span><p>The 5% contribution on the &pound;18,000 funding band, per learner. The government pays the other 95%.</p></div>
-      <div class="fcard"><span class="who">Levy payers</span><span class="big">Levy</span><span class="sub">Pay bill over &pound;3m</span><p>Paid from levy funds you already contribute.</p></div>
+      <div class="fcard"><span class="who">Staff aged 25 and over</span><span class="big">&pound;900</span><span class="sub">Per learner</span><p>The government pays the rest of the &pound;18,000 course cost.</p></div>
     </div>
+    <p class="levynote"><b>This is a levy compliant course.</b></p>
     <ul class="ticks staff-ticks">
       <li>Around 18 months, fully online</li>
       <li>A project on a real problem in your business</li>
@@ -501,11 +504,11 @@ footer nav a:hover{text-decoration:underline}
         <li>Are already on another apprenticeship, a government-funded Skills Bootcamp or Adult Skills Fund training</li>
         <li>Can't stay employed long enough to finish, for example a visa or fixed-term contract ending first</li></ul></div>
     </div>
-    <div class="fund" style="margin-top:18px">
-      <div class="fcard lead"><span class="who">Learner aged 16 to 24</span><span class="big">100%</span><span class="sub">Fully funded</span><p>For every employer. Nothing for the employer to pay.</p></div>
-      <div class="fcard"><span class="who">Aged 25+, non-levy employer</span><span class="big">95%</span><span class="sub">Employer pays 5%</span><p>Up to the &pound;18,000 funding band.</p></div>
-      <div class="fcard"><span class="who">Levy payers</span><span class="big">Levy</span><span class="sub">Pay bill over &pound;3m</span><p>Paid from levy funds they already contribute. Non-levy employers hiring a new apprentice aged 16 to 24 may also get a &pound;2,000 hiring payment.</p></div>
+    <div class="fund f2" style="margin-top:18px">
+      <div class="fcard lead"><span class="who">Learner aged 16 to 24</span><span class="big">100%</span><span class="sub">Fully funded</span><p>Nothing for the employer to pay.</p></div>
+      <div class="fcard"><span class="who">Learner aged 25 and over</span><span class="big">&pound;900</span><span class="sub">Per learner</span><p>The government pays the rest of the &pound;18,000 course cost.</p></div>
     </div>
+    <p class="levynote"><b>This is a levy compliant course.</b></p>
     <div class="assess"><b>Assessment:</b> learners complete a project, plus any other methods the independent assessment organisation chooses (such as a presentation, professional discussion or portfolio). They can be assessed at any suitable point in the apprenticeship, and are graded pass or distinction.</div>
     <div class="morelinks"><a class="btn btn-ghost" href="../eligibility/">Full eligibility rules</a><a class="btn btn-ghost" href="../government-rules/">Full government rules</a></div>
   </div>
